@@ -1,0 +1,75 @@
+@import './config';
+
+
+.auto-complete {
+    position: relative;
+    border-radius: border-radius;
+
+    &__items-box {
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 100;
+
+        opacity: 0;
+        visibility hidden;
+
+        &--is-show {
+            opacity: 1;
+            visibility visible;
+        }
+
+        ^[0]--list-down & {
+            top: 100%;
+            margin-top: -1px;
+        }
+
+        ^[0]--list-up & {
+            bottom: 100%;
+            margin-bottom: -2px;
+        }
+
+    }
+
+    &__not-found-box {
+        z-index: 100;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: white;
+        padding: 1.4rem 1.4rem;
+        border: 0.1rem solid color-line;
+        font-style: italic;
+
+
+        ^[0]--list-down & {
+            top: 100%;
+            margin-top: -1px;
+            border-radius: 0 0 border-radius border-radius;
+        }
+
+        ^[0]--list-up & {
+            bottom: 100%;
+            margin-bottom: -1px;
+            border-radius: border-radius border-radius 0 0;
+        }
+    }
+
+    &__inner-box {
+        position: relative;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+    }
+
+
+    &__input-box {
+        flex-grow: 1;
+    }
+
+    &__icon-box {
+        display: flex;
+        align-items: center;
+    }
+
+}

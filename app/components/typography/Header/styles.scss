@@ -1,0 +1,23 @@
+@import './config';
+
+
+.header {
+	font-weight: $font-weight;
+	color: $color-text;
+	display: block;
+
+	&.size_1 {
+		font-size: $font-size-h1;
+	}
+
+	&.size_2 {
+		font-size: $font-size-h2;
+	}
+
+	&.size_3 {
+		font-size: $font-size-h3;
+	}
+}
+
+
+

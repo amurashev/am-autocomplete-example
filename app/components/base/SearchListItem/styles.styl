@@ -1,0 +1,21 @@
+@import './config.styl';
+
+
+.search-list-item {
+	padding: 1.5rem
+
+	&--is-active {
+		color: white !important;
+
+	}
+
+	&__founded-str {
+		color: founded-color;
+		text-decoration: underline;
+
+		^[0]--is-active & {
+			color: white !important;
+		}
+	}
+}
+
