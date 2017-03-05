@@ -1,10 +1,6 @@
-# Тестовое задание для Crystal Service Integration
+# Тестовое задание для IQ Option
 
 ### Запуск
-Генерация данных для работы:
-```sh
-npm run data:generator
-```
 Build:
 ```sh
 npm run build
