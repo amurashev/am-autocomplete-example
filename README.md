@@ -1,7 +1,2 @@
-# Тестовое задание для IQ Option
+# Example of cross-platform Autocomplete / Select component
 
-### Запуск
-Build:
-```sh
-npm run build
-```
